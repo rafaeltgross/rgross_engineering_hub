@@ -1,0 +1,95 @@
+GNU LESSER GENERAL PUBLIC LICENSE
+Version 3, 29 June 2007
+
+Copyright (C) 2026 RGross Engineering
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Lesser General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Lesser General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+---
+
+FULL LGPL-3 LICENSE TEXT:
+
+                   GNU LESSER GENERAL PUBLIC LICENSE
+                       Version 3, 29 June 2007
+
+ Copyright (C) 2007 Free Software Foundation, Inc. <http://fsf.org/>
+ Everyone is permitted to copy and distribute verbatim copies
+ of this license document, but changing it is not allowed.
+
+
+  This version of the GNU Lesser General Public License incorporates
+the terms and conditions of version 3 of the GNU General Public
+License, supplemented by the additional permissions listed below.
+
+  0. Additional Definitions.
+
+  As used herein, "this License" refers to version 3 of the GNU Lesser
+General Public License, and the "GNU GPL" refers to version 3 of the
+GNU General Public License.
+
+  "The Library" refers to a covered work governed by this License,
+other than an Application or Combined Work as defined below.
+
+  An "Application" is any work that makes use of an interface provided
+by the Library, but is not based on the Library.  Defining a subclass
+of a class defined by the Library is considered a mode of using an
+interface provided by the Library.
+
+  A "Combined Work" is a work produced by combining or linking an
+Application with the Library.  The particular version of the Library
+with which the Combined Work is made is also called the "Linked
+Version".
+
+  The "Minimal Corresponding Source" for a Combined Work means the
+Corresponding Source for the Combined Work, excluding any source code
+for portions of the Combined Work that, considered in isolation, are
+based on the Application, and not on the Linked Version.
+
+  The "Corresponding Application Code" for a Combined Work means the
+object code and/or source code for the Application, plus any data and
+utility programs needed for reproducing the Combined Work from the
+Application, but excluding the system libraries of the Combined Work.
+
+  1. Exception to Section 3 of the GNU GPL.
+
+  You may convey a covered work under sections 3 and 4 of this License
+without being bound by section 3 of the GNU GPL.
+
+  2. Conveying Modified Versions.
+
+  If you modify a copy of the Library, and, in your modifications, a
+facility refers to a function or data to be supplied by an Application
+that uses the facility (other than as an argument passed when the
+facility is invoked), then you may convey a copy of the modified
+version under this License, provided that you do all of the following:
+
+    a) The work must itself be a library or an application.
+    b) You must cause the files modified to carry prominent notices
+    stating that you changed the files and the date of any change.
+    c) You must cause the whole of the work to be licensed at no
+    charge to all third parties under the terms of this License.
+    d) If a facility in the modified Library refers to a function or
+    data supplied by an Application that uses the facility (other than
+    as an argument passed when the facility is invoked), then you must
+    make a good faith effort to ensure that, in the event an Application
+    does not itself supply the function or data, the facility still
+    operates, and performs whatever part of its purpose remains
+    meaningful.
+
+(Omitted: Full text available at https://www.gnu.org/licenses/lgpl-3.0.html)
+
+---
+
+For the complete LGPL-3 license text, visit:
+https://www.gnu.org/licenses/lgpl-3.0.html
