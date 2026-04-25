@@ -193,9 +193,6 @@
                 <filter name="filter_waiting_supplier" string="Waiting Supplier" domain="[('status','=','waiting_supplier')]"/>
                 <filter name="filter_done" string="Done" domain="[('status','=','done')]"/>
                 <filter name="filter_urgent" string="Urgent" domain="[('priority','=','urgent')]"/>
-                <separator/>
-                <filter name="filter_my_projects" string="My Open Projects"
-                    domain="[('status','not in',['done','cancelled']),('create_uid','=',uid())]"/>
                 <group expand="0" string="Group By">
                     <filter name="group_status" string="Status" context="{'group_by': 'status'}"/>
                     <filter name="group_type" string="Project Type" context="{'group_by': 'project_type'}"/>
