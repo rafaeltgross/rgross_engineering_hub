@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_rgross_engineering_project_user,rgross.engineering.project.user,model_rgross_engineering_project,base.group_user,1,1,1,1
+access_rgross_project_expense_user,rgross.project.expense.user,model_rgross_project_expense,base.group_user,1,1,1,1

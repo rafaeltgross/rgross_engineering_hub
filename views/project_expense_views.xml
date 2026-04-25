@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- LIST VIEW -->
+    <record id="view_rgross_project_expense_list" model="ir.ui.view">
+        <field name="name">rgross.project.expense.list</field>
+        <field name="model">rgross.project.expense</field>
+        <field name="arch" type="xml">
+            <list string="Project Expenses">
+                <field name="date"/>
+                <field name="name"/>
+                <field name="project_id"/>
+                <field name="expense_type"/>
+                <field name="vendor_id"/>
+                <field name="amount"/>
+                <field name="currency_id" column_invisible="True"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- FORM VIEW -->
+    <record id="view_rgross_project_expense_form" model="ir.ui.view">
+        <field name="name">rgross.project.expense.form</field>
+        <field name="model">rgross.project.expense</field>
+        <field name="arch" type="xml">
+            <form string="Project Expense">
+                <sheet>
+                    <group>
+                        <group string="General">
+                            <field name="name"/>
+                            <field name="project_id"/>
+                            <field name="date"/>
+                            <field name="expense_type"/>
+                            <field name="vendor_id"/>
+                        </group>
+                        <group string="Amount">
+                            <field name="amount"/>
+                            <field name="currency_id" invisible="1"/>
+                        </group>
+                    </group>
+                    <group string="Receipt">
+                        <field name="receipt_attachment" widget="binary" filename="receipt_filename"/>
+                        <field name="receipt_filename" invisible="1"/>
+                    </group>
+                    <group string="Notes">
+                        <field name="notes" nolabel="1"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- SEARCH VIEW -->
+    <record id="view_rgross_project_expense_search" model="ir.ui.view">
+        <field name="name">rgross.project.expense.search</field>
+        <field name="model">rgross.project.expense</field>
+        <field name="arch" type="xml">
+            <search string="Search Expenses">
+                <field name="name"/>
+                <field name="project_id"/>
+                <field name="vendor_id"/>
+                <separator/>
+                <filter name="filter_material" string="Material" domain="[('expense_type','=','material')]"/>
+                <filter name="filter_electronic" string="Electronic Component" domain="[('expense_type','=','electronic_component')]"/>
+                <filter name="filter_3d_printing" string="3D Printing" domain="[('expense_type','=','3d_printing')]"/>
+                <filter name="filter_prototype" string="Prototype" domain="[('expense_type','=','prototype')]"/>
+                <filter name="filter_software" string="Software License" domain="[('expense_type','=','software_license')]"/>
+                <filter name="filter_supplier" string="Supplier Service" domain="[('expense_type','=','supplier_service')]"/>
+                <group expand="0" string="Group By">
+                    <filter name="group_expense_type" string="Expense Type" context="{'group_by': 'expense_type'}"/>
+                    <filter name="group_project" string="Project" context="{'group_by': 'project_id'}"/>
+                    <filter name="group_vendor" string="Vendor" context="{'group_by': 'vendor_id'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <!-- GRAPH VIEW -->
+    <record id="view_rgross_project_expense_graph" model="ir.ui.view">
+        <field name="name">rgross.project.expense.graph</field>
+        <field name="model">rgross.project.expense</field>
+        <field name="arch" type="xml">
+            <graph string="Expenses" type="bar">
+                <field name="expense_type"/>
+                <field name="amount" type="measure"/>
+            </graph>
+        </field>
+    </record>
+
+    <!-- PIVOT VIEW -->
+    <record id="view_rgross_project_expense_pivot" model="ir.ui.view">
+        <field name="name">rgross.project.expense.pivot</field>
+        <field name="model">rgross.project.expense</field>
+        <field name="arch" type="xml">
+            <pivot string="Expenses">
+                <field name="project_id" type="row"/>
+                <field name="expense_type" type="col"/>
+                <field name="amount" type="measure"/>
+            </pivot>
+        </field>
+    </record>
+
+    <!-- ACTION -->
+    <record id="action_rgross_project_expense" model="ir.actions.act_window">
+        <field name="name">Project Expenses</field>
+        <field name="res_model">rgross.project.expense</field>
+        <field name="view_mode">list,form,graph,pivot</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Record your first expense
+            </p>
+        </field>
+    </record>
+
+</odoo>

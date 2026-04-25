@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- ROOT MENU -->
+    <menuitem id="menu_rgross_engineering_root"
+        name="RGross Engineering"
+        sequence="50"/>
+
+    <!-- PROJECTS -->
+    <menuitem id="menu_rgross_engineering_projects"
+        name="Projects"
+        parent="menu_rgross_engineering_root"
+        action="action_rgross_engineering_project"
+        sequence="10"/>
+
+    <!-- EXPENSES -->
+    <menuitem id="menu_rgross_engineering_expenses"
+        name="Expenses"
+        parent="menu_rgross_engineering_root"
+        action="action_rgross_project_expense"
+        sequence="20"/>
+
+    <!-- CUSTOMERS -->
+    <menuitem id="menu_rgross_engineering_customers"
+        name="Customers"
+        parent="menu_rgross_engineering_root"
+        action="contacts.action_contacts"
+        sequence="30"/>
+
+</odoo>
